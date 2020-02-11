@@ -1,0 +1,75 @@
+.education {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container-2 {
+  position: relative;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 0 40px;
+  grid-template-rows: auto;
+  margin-left: 15vh;
+  z-index: 1;
+}
+h1 {
+  margin: -33vh 0vh 0vh -69vh;
+  position: absolute;
+  font-size: 4rem;
+  color: aqua;
+}
+.html {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: -44vh 0vh 0vh -87vh;
+}
+.tag-div,
+.tag-name,
+.tag-name2,
+.tag-div2 {
+  position: absolute;
+  font-family: CaveatRegular;
+  opacity: 0.5;
+}
+.tag-div {
+  margin: -2vh 0vh 0vh -2vh;
+}
+.tag-name {
+  margin: 5vh 0vh 0vh 3vh;
+}
+.tag-name2 {
+  margin: 15vh 0vh 0vh 3vh;
+}
+.tag-div2 {
+  margin-top: 80vh;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}

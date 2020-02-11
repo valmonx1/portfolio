@@ -1,0 +1,26 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+.hero {
+  overflow: hidden;
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+}
+
+.details {
+  grid-column: 2/3;
+  align-self: end;
+}
+
+.details h3 {
+  font-size: 50px;
+  font-family: PopRegular;
+}
+
+.details h2 {
+  font-size: 35px;
+  padding: 20px 0px;
+}

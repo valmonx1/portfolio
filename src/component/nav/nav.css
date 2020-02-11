@@ -1,0 +1,13 @@
+nav {
+  min-height: 10vh;
+  width: 95%;
+  margin-left: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+}
+.logo {
+  font-size: 20px;
+}

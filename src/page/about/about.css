@@ -1,0 +1,130 @@
+.about {
+  height: 100vh;
+  display: flex;
+}
+.wrapper {
+  height: 20vh;
+  width: 40vh;
+  margin: 0vh 0vh 0vh 50vh;
+  position: absolute;
+}
+.myself {
+  font-family: PopLight;
+  font-size: 1.5rem;
+  margin: 42vh 0vh 0vh -27vh;
+}
+.box-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: auto auto auto 120vh;
+}
+.box-area {
+  animation: animate 10s ease-in-out infinite;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+}
+.box-area div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.box-area > .box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  background-repeat: no-repeat;
+  background-color: rgba(50, 50, 50, 0.9);
+  background-size: contain;
+  opacity: 1;
+}
+
+.box-area > .box1,
+.box2,
+.box4,
+.box5,
+.box6 {
+  background-position: center;
+}
+
+.box-area .box1 {
+  background-image: url(../../img/css.png);
+  transform: translateZ(100px);
+}
+.box-area .box2 {
+  background-image: url(../../img/html.png);
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box-area .box3 {
+  background-image: url(../../img/javascript.png);
+  background-position: contain center;
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box4 {
+  background-image: url(../../img/react.png);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box5 {
+  background-image: url(../../img/bootStrap.png);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box6 {
+  background-image: url(../../img/github.png);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.tags,
+.tags-end,
+.tagline,
+.tagline-end,
+.tagline-paragraph,
+.tagline-paragraph-end {
+  font-family: CaveatRegular;
+  position: absolute;
+  opacity: 0.5;
+}
+.tags {
+  margin: 4vh 0vh 0vh 10vh;
+}
+.tags-end {
+  margin: 83vh 0vh 0vh 10vh;
+}
+.tagline {
+  margin: 20vh 0vh 0vh 15vh;
+}
+.tagline-end {
+  margin: 30vh 0vh 0vh 15vh;
+}
+.tagline-paragraph {
+  margin: 40vh 0vh 0vh -30vh;
+}
+.tagline-paragraph-end {
+  margin: 0vh 0vh 0vh -30.5vh;
+}
+.about-tag {
+  font-size: 4rem;
+  color: aqua;
+  margin: 21vh 0vh 0vh 19vh;
+}
+
+@keyframes animate {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg);
+  }
+  70% {
+    transform: rotateZ(90deg);
+  }
+}

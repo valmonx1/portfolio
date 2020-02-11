@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url(./fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PopRegular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PopBold;
+  src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: CaveatBold;
+  src: url(./fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: CaveatRegular;
+  src: url(./fonts/Caveat-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PopLight;
+  overflow: hidden;
+}
+
+ul {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.portfolio {
+  color: white;
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+
+.pages {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pages > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pages h3 {
+  font-size: 24px;
+  padding: 30px;
+}
+
+.pages svg {
+  cursor: pointer;
+
+  transform: scale(2);
+}
+
+.pages svg:hover {
+  animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(4);
+  }
+}

@@ -1,0 +1,6 @@
+.gambar {
+  height: 60vh;
+  width: 60vh;
+  object-fit: contain;
+  margin: auto auto auto 9vh;
+}
