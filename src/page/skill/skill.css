@@ -1,4 +1,99 @@
 .skill {
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
+}
+.tag-skill {
+  position: absolute;
+  width: 70vw;
+  height: 85vh;
+  opacity: 0.5;
+  font-family: CaveatRegular;
+  margin: 3.5vh 0vw 0vh 5vw;
+}
+.tag-skill-h1 {
+  margin: 6vh 0vw 0vh 5vw;
+}
+.tag-skill-h1-end {
+  margin: 8.5vh 0vw 0vh 5vw;
+}
+.tag-skill-p {
+  margin: 14vh 0vw 0vh 9vw;
+}
+.tag-skill-p-end {
+  margin: 12.5vh 0vw 0vh 9vw;
+}
+.tag-skill-div-end {
+  margin: 35vh 0vw 0vh 0vw;
+}
+h4 {
+  position: absolute;
+  font-family: PopBold;
+  font-size: 5rem;
+  color: aqua;
+  margin: 14vh 0vw 0vh 11vw;
+}
+.skill-sentence {
+  position: absolute;
+  margin: 43vh 0vw 0vh 15vw;
+  width: 35.5vw;
+  height: 12vh;
+}
+.contain-cup {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin: 38vh 0vw 0vh 65vw;
+}
+.cup {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #2196f3;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  margin: auto;
+  overflow: hidden;
+}
+.cup:before {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 40%;
+  background: #111;
+  opacity: 0.8;
+  animation: air 12s linear infinite;
+}
+@keyframes air {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cup:after {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 40%;
+  background: #111;
+  opacity: 0.9;
+  animation: air2 6s linear infinite;
+}
+@keyframes air2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

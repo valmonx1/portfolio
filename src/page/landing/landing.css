@@ -1,7 +1,6 @@
-.page {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+.bio {
+  height: 100vh;
+  width: 100vw;
 }
 .hero {
   overflow: hidden;
@@ -23,4 +22,97 @@
 .details h2 {
   font-size: 35px;
   padding: 20px 0px;
+}
+
+/* 1000px width */
+
+@media (min-width: 1001px) {
+  .bio {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+  }
+  .gambar {
+    height: 200px;
+    width: 200px;
+
+    object-fit: contain;
+  }
+  .details h3 {
+    font-size: 30px;
+    font-family: PopRegular;
+  }
+  .details h2 {
+    font-size: 25px;
+    padding: 10px 0px;
+  }
+}
+
+/* 1300px width */
+
+@media (min-width: 1301px) {
+  .bio {
+    height: 100vh;
+    width: 100vw;
+  }
+  .hero {
+    position: absolute;
+    margin: 31vh 0vw 0vh 37vw;
+  }
+  .gambar {
+    height: 380px;
+    width: 390px;
+    object-fit: contain;
+  }
+
+  .details {
+    position: absolute;
+    margin: 80vh 0vw 0vh 6.2vw;
+  }
+
+  .details h3 {
+    font-size: 48px;
+    font-family: PopRegular;
+  }
+
+  .details h2 {
+    font-size: 35px;
+    padding: 20px 0px;
+  }
+}
+
+/* 1600px width */
+
+@media (min-width: 1600px) {
+  .bio {
+    height: 100vh;
+    width: 100vw;
+  }
+  .hero {
+    width: 400px;
+    height: 490px;
+    margin: 22vh 0vw 0vh 40vw;
+  }
+  .gambar {
+    height: 490px;
+    width: 400px;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  .details {
+    position: absolute;
+    margin: 80vh 0vw 0vh 4.9vw;
+  }
+
+  .details h3 {
+    font-size: 55px;
+    font-family: PopRegular;
+  }
+
+  .details h2 {
+    font-size: 40px;
+    padding: 20px 0px;
+  }
 }

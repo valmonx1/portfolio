@@ -6,7 +6,7 @@ const Landing = props => {
   return (
     <>
       <NavBar title="HELLO" />
-      <section id={props.id} className="page bio">
+      <section id={props.id} className="bio">
         <div className="details">
           <h3>Muhammad Nabil</h3>
           <h2>Front End Developer</h2>
